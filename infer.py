@@ -17,9 +17,9 @@ def main():
 
     # Change model input shape to accept all size inputs
     model = keras.models.load_model('models/generator.h5')
-    inputs = keras.Input((None, None, 3))
-    output = model(inputs)
-    model = keras.models.Model(inputs, output)
+    #inputs = keras.Input((None, None, 3))
+    #output = model(inputs)
+    #model = keras.models.Model(inputs, output)
 
     # Loop over all images
     for image_path in image_paths:
