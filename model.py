@@ -15,8 +15,8 @@ class FastSRGAN(object):
         """
         self.hr_height = args.hr_size
         self.hr_width = args.hr_size
-        self.lr_height = self.hr_height // 4  # Low resolution height
-        self.lr_width = self.hr_width // 4  # Low resolution width
+        self.lr_height = self.hr_height // 2  # Low resolution height
+        self.lr_width = self.hr_width // 2  # Low resolution width
         self.lr_shape = (self.lr_height, self.lr_width, 3)
         self.hr_shape = (self.hr_height, self.hr_width, 3)
         self.iterations = 0
