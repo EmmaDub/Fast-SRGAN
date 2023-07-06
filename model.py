@@ -196,8 +196,8 @@ class FastSRGAN(object):
         c2 = keras.layers.Add()([c2, c1])
         
         # Upsampling
-        u1 = deconv2d(c2)
-        u2 = deconv2d(u1)
+        #u1 = deconv2d(c2)
+        u2 = deconv2d(c2)
 
         # Generate high resolution output
         gen_hr = keras.layers.Conv2D(3, kernel_size=3, strides=1, padding='same', activation='tanh')(u2)
